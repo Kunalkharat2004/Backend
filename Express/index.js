@@ -40,20 +40,20 @@ app.listen(port,()=>{
 
 // //Path parameters
 
-app.get('/:username/:id',(req,res)=>{
-    const p = req.params;   //p will be an object in which the path parameters will store
-    const {username,id} = p;
-    res.send(`Hi ${username} your id is ${id}`);
-});  //So we need to access like localhost:3000/kunal/123
+// app.get('/:username/:id',(req,res)=>{
+//     const p = req.params;   //p will be an object in which the path parameters will store
+//     const {username,id} = p;
+//     res.send(`Hi ${username} your id is ${id}`);
+// });  //So we need to access like localhost:3000/kunal/123
 
-//Query string
-app.get('/s',(req,res)=>{
-  const queryString = req.query;    //The query string is an object in which whatever we will write in search?q=${}  that will be store in form of object.So we need to access like localhost:3000/search?=apple&color=red
+// Query string
+app.get('/search',(req,res)=>{
+  const queryString = req.query;    //The query string is an object in which whatever we will write in search?q=${}  that will be store in form of object.So we need to access like localhost:3000/search?fruit=apple&color=red
 
   //Result: {
-  //   "q":"apple",
+  //   "fruit":"apple",
   //   "color":"red"
   // }
   const html = `<h1>Search request for ${queryString}</h1>`;
   res.send(queryString);
-})
+});

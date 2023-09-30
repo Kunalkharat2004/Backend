@@ -1,0 +1,35 @@
+<%- include("include/head.ejs") %>
+<body>
+    <div class="instagram">
+        <div class="insta-details">
+            <div class="hr"></div>
+            <h1>You are currently on @<%= data.name %> account</h1>
+            <div class="follow-details">
+                <h3 >Followers : <%= data.followers %></h3> 
+                <h3>Following : <%= data.following %></h3>
+            </div>
+           
+            <div class="follow-btn follow-details">
+                <button id="follow">Follow</button>
+                <button id="message">Message</button>
+            </div>
+
+            
+        <div class="images"> 
+          <%for(let post of data.posts){%>
+            <div class="img-container">
+                <img src="<%= post.image%>" alt="">
+                <h3 >Likes : <%= post.likes %></h3> 
+                <h3>Comments : <%= post.comments %></h3>
+
+            </div>
+          
+          <%}%>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+ 

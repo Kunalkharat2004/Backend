@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.instagram{
+    height: 100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.insta-details{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.follow-details{
+width:45%;
+height: 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+gap:50px;
+margin-top: 20px;
+padding: 10px 30px;
+}
+.follow-details h3{
+font-size: 1.3rem;
+}
+.follow-btn button{
+font-size: 1rem;
+padding: 7px 20px;
+border: none;
+outline: none;
+cursor: pointer;
+border-radius: 30px ;
+}
+.follow-btn{
+gap: 20px;
+}
+#follow{
+background-color: #0095f6;
+}
+.hr{
+width: 80%;
+height: 100px;
+margin-top: 14rem;
+border-top: 1px solid rgba(0, 0, 0, 0.6);
+position: absolute;
+}
+.images{
+width: 100%;
+min-height: 100%;
+display: flex;
+margin-top:3rem;
+justify-content: center;
+align-items: flex-start;
+flex-wrap: wrap;
+gap:100px;
+padding: 50px 40px;
+}
+.images img{
+width: 300px;
+height: 300px;
+}
+.img-container{
+width: 20%;
+height: 50%;
+}
