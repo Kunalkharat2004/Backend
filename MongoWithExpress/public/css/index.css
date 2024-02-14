@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+    color: green;
+}
+
+.add-new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 15px 20px;
+    border-radius: 30px;
+    border:none;
+    outline: none;
+    background-color: rgba(0, 128, 0, 0.936);
+    color: #ffff;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.add-new:hover{
+    background-color: green;
+    font-size: 19px;
+    transition: all linear 0.2s;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    line-height: 35px;
+}
+.from,.to{
+    font-size: 20px;
+    font-weight: 600;
+}
+.msg{
+    font-size: 18px;
+    font-weight: 500;
+}
+.date-time{
+    font-size: 16px;
+    font-weight: 500;
+}
+.opt-btn{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 20px; /* Remove this line if you don't want a gap between buttons vertically */
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #ffff;
+    cursor: pointer;
+    font-size: 16px;
+}
+.edit-btn{
+    background-color: blue;
+}
+.delete-btn{
+    background-color: red;
+}

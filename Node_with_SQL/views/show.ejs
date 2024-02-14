@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="show.css">
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Sr no.</th>
+                <th>ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Update</th>
+                <th>DELETE</th>
+            </tr>
+
+            <% let i = 1; %>
+            <%for(let user of result){ %>
+                <tr>
+                    <td><%= i++ %></td>
+                    <td><%=user.id%></td>
+                    <td><%=user.username%></td>
+                    <td><%=user.email%></td>
+                    <td>
+                        <form method="GET" action="/user/<%= user.id %>/edit">
+                            <button>Edit</button>
+                        </form>
+                    </td>
+                    <td> 
+                        <form method="POST" action="/user/<%= user.id %>/delete?_method=DELETE">
+                        <button>DELETE</button>
+                    </form>
+                </td>
+                </tr>
+            <% } %>
+        </table>
+    </div>
+</body>
+</html>

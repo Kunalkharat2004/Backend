@@ -1,3 +1,5 @@
+//  EJS is a templating engine for generating dynamic HTML and other markup within your Express (or other Node.js) applications. It is used to define and render the views or templates of your web application
+
 const express = require("express");
 const app = express();
 
@@ -31,7 +33,7 @@ app.set("views",path.join(__dirname,"/views"));
 //It allows you to insert values, variables, or JavaScript expressions into your HTML output. The syntax for interpolation in EJS uses the <%= ... %> tags. 
 
 app.get("/hello",(req,res)=>{
-    res.render("hello.ejs");
+    res.render("hello");
 })
 
 app.get("/randomNo",(req,res)=>{

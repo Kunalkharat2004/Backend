@@ -27,4 +27,4 @@ console.log(table(3));
 import { generate} from "random-words";
 
 console.log(generate());
-//output: 'army'
+//output: 'Any random word'

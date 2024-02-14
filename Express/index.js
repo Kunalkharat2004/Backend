@@ -1,5 +1,7 @@
+// Express is a minimal and flexible Node.js web application framework. It's used to build web applications and APIs by providing a set of features and tools for routing, handling HTTP requests and responses, middleware support, and more. 
+
 const express = require('express')
-const app = express()
+const app = express();
 
 const port = 3000;
 app.listen(port,()=>{

@@ -13,7 +13,7 @@ app.use(express.static(path.join(__dirname,'/public/css')));
 app.use(express.static(path.join(__dirname,'/public/js')));
 
 const instaData = require('./data.json');
-app.get("/ig/:username",(req,res)=>{
+app.get("/:username",(req,res)=>{
  let { username } = req.params;
     const data = instaData[username];
    if(data){

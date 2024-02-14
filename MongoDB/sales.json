@@ -1,0 +1,45 @@
+[
+    {
+      "_id": 1,
+      "quantity": 5,
+      "price": 50,
+      "targetPrice": 300
+    },
+    {
+      "_id": 2,
+      "quantity": 8,
+      "price": 90,
+      "targetPrice": 430
+    },
+    {
+      "_id": 3,
+      "quantity": 4,
+      "price": 45,
+      "targetPrice": 890
+    },
+    {
+      "_id": 4,
+      "quantity": 9,
+      "price": 78,
+      "targetPrice": 900
+    },
+    {
+      "_id": 5,
+      "quantity": 11,
+      "price": 82,
+      "targetPrice": 230
+    },
+    {
+      "_id": 6,
+      "quantity": 6,
+      "price": 45,
+      "targetPrice": 100
+    },
+    {
+      "_id": 7,
+      "quantity": 13,
+      "price": 87,
+      "targetPrice": 560
+    }
+  ]
+  
